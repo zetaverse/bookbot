@@ -45,6 +45,7 @@ def get_sorted_list(file_path):
         char_list.append({"char": char, "count": dict[char]})
     
     # Sorts the list in descending order based on the "count" key
+    # Python's built-in sort function is used with a custom key which takes in the helper function and applies it to each dict in the list and then sorts it.
     char_list.sort(reverse=True, key=sort_on)
 
     # Returns the sorted list of characters and their counts
